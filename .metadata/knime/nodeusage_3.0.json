@@ -18,7 +18,7 @@
                 "nrfails": 0,
                 "exectime": 669,
                 "nrcreated": 2,
-                "successor": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager"
+                "successor": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot"
             },
             {
                 "id": "org.knime.base.node.preproc.stringreplacer.StringReplacerNodeFactory#String Replacer",
@@ -38,42 +38,86 @@
             },
             {
                 "id": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager",
-                "nrexecs": 7,
+                "nrexecs": 11,
                 "nrfails": 0,
-                "exectime": 22,
+                "exectime": 40,
                 "nrcreated": 1,
-                "successor": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot"
+                "successor": "org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means"
             },
             {
                 "id": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot",
-                "nrexecs": 4,
+                "nrexecs": 35,
                 "nrfails": 2,
-                "exectime": 77747,
-                "nrcreated": 1,
+                "exectime": 433641,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
                 "id": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory#Normalizer",
+                "nrexecs": 8,
+                "nrfails": 0,
+                "exectime": 1898,
+                "nrcreated": 2,
+                "successor": "org.knime.distmatrix.kmedoids.KMedoidsNodeFactory#k-Medoids"
+            },
+            {
+                "id": "org.knime.distmatrix.kmedoids.KMedoidsNodeFactory#k-Medoids",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 1296,
+                "nrcreated": 3,
+                "successor": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot"
+            },
+            {
+                "id": "org.knime.base.node.preproc.normalize.NormalizerApplyNodeFactory#Normalizer (Apply)",
                 "nrexecs": 0,
                 "nrfails": 0,
                 "exectime": 0,
                 "nrcreated": 1,
                 "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.weka37.clusterer.WekaClustererNodeFactory#EM (3.7)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 115185,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory#X-Partitioner",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 103,
+                "nrcreated": 0,
+                "successor": "n/a"
             }
         ],
         "metaNodes": {
+            "nrexecs": 0,
+            "nrfails": 0,
+            "exectime": 0,
+            "nrcreated": 0
         },
         "wrappedNodes": {
         }
     },
-    "uptime": 3202234,
+    "uptime": 8687821,
     "workflowsOpened": 0,
     "remoteWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 1,
+    "launches": 2,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 3202234,
+    "timeSinceLastStart": 3286405,
     "crashes": 0,
     "properlyShutDown": false
 }
