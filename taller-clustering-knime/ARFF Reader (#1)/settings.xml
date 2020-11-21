@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="FileURL" type="xstring" value="D:\Desktop\log_feb_muestra5_mon.arff"/>
+<entry key="FileURL" type="xstring" value="file:/D:/Desktop/log_feb_muestra5_mon.arff"/>
 <entry key="RowPrefix" type="xstring" value="Row"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -36,6 +36,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="23f63f46-fed0-4c8c-894f-753060a92b51"/>
+<entry key="file_store_id" type="xstring" value="adc98292-1b5f-4d4b-813b-b00dd7287c41"/>
 </config>
 </config>

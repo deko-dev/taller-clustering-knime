@@ -7,8 +7,8 @@
 </config>
 <config key="model">
 <entry key="target_column" type="xstring" value="dia_semana"/>
-<entry key="dictionary_location" type="xstring" value="D:\Desktop\DictionaryDays.txt"/>
 <entry key="appended_column" type="xstring" isnull="true" value=""/>
+<entry key="dictionary_location" type="xstring" value="D:\Desktop\DictionaryDays.txt"/>
 <entry key="delimiter_in_dict" type="xchar" value=","/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -38,6 +38,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="9aeb68da-81dd-4c19-abec-71654bcb012d"/>
+<entry key="file_store_id" type="xstring" value="288491c7-1e68-4604-ab3b-088c0a82c9b8"/>
 </config>
 </config>

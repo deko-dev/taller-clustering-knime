@@ -165,3 +165,111 @@ java.lang.IllegalStateException: Cannot load settings into node; it is executing
 2020-11-20 15:49:34,546 : WARN  : KNIME-Worker-16-X-Partitioner 0:0:2 :  : Node : Decision Tree Learner : 0:0:16 : Class column "class" not found or incompatible
 2020-11-20 15:50:14,803 : WARN  : main :  : Node : Decision Tree Learner : 0:0:16 : Class column "class" not found or incompatible
 2020-11-20 15:57:24,138 : WARN  : main :  : DataTableSpec : k-Means : 0:9 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 16:12:15,019 : ERROR : ModalContext :  : Node : EM (3.7) : 0:8 : I/O error while saving internals: <no details available>
+java.io.UTFDataFormatException
+	at java.io.ObjectOutputStream$BlockDataOutputStream.writeUTF(ObjectOutputStream.java:2164)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.writeUTF(ObjectOutputStream.java:2007)
+	at java.io.ObjectOutputStream.writeUTF(ObjectOutputStream.java:869)
+	at org.knime.ext.weka37.clusterer.WekaClustererNodeModel.saveInternals(WekaClustererNodeModel.java:305)
+	at org.knime.core.node.Node.saveInternals(Node.java:2341)
+	at org.knime.core.node.FileNodePersistor.saveNodeInternDirectory(FileNodePersistor.java:1462)
+	at org.knime.core.node.FileNodePersistor.save(FileNodePersistor.java:1188)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.save(FileNativeNodeContainerPersistor.java:518)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.save(FileSingleNodeContainerPersistor.java:598)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.saveNodeContainer(FileWorkflowPersistor.java:2175)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.saveContent(FileWorkflowPersistor.java:1930)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.save(FileWorkflowPersistor.java:1844)
+	at org.knime.core.node.workflow.WorkflowManager.save(WorkflowManager.java:8673)
+	at org.knime.workbench.editor2.InplaceSaveRunnable.save(InplaceSaveRunnable.java:92)
+	at org.knime.workbench.editor2.AbstractSaveRunnable.run(AbstractSaveRunnable.java:103)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2020-11-20 16:12:19,847 : WARN  : ModalContext :  : Node : EM (3.7) : 3:8 : weka.clusterers.EM: Cannot handle string attributes!
+2020-11-20 16:17:34,561 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: taller-clustering-knime 0 loaded with error during data load
+2020-11-20 16:17:34,564 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: taller-clustering-knime 0
+2020-11-20 16:17:34,564 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: EM (3.7) 0:8
+2020-11-20 16:17:34,565 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: null
+2020-11-20 16:17:39,199 : WARN  : ModalContext :  : Node : EM (3.7) : 3:8 : weka.clusterers.EM: Cannot handle string attributes!
+2020-11-20 16:39:43,801 : WARN  : KNIME-Worker-3-ARFF Reader 3:1 :  : Node : EM (3.7) : 3:8 : weka.clusterers.EM: Cannot handle string attributes!
+2020-11-20 16:39:50,966 : WARN  : KNIME-Worker-4-Scatter Plot 3:6 :  : Node : Scatter Plot : 3:6 : Only the first 26430 rows are displayed.
+2020-11-20 17:25:38,572 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:28:40,117 : WARN  : KNIME-Worker-9-Statistics 3:9 :  : Node : Statistics : 3:9 : Maximum number of unique possible values (1000) exceeds for column(s): "Curso"
+2020-11-20 17:28:53,077 : WARN  : KNIME-Worker-11-Statistics 3:9 :  : Node : Statistics : 3:9 : Maximum number of unique possible values (1000) exceeds for column(s): "Curso"
+2020-11-20 17:49:20,371 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:49:33,601 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:49:35,601 : WARN  : KNIME-Worker-14-X-Partitioner 3:10 :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:49:51,838 : WARN  : KNIME-Worker-15-X-Partitioner 3:0:2 :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:52:03,814 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:52:14,171 : WARN  : KNIME-Worker-19-X-Partitioner 3:0:2 :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:54:05,613 : WARN  : main :  : Node : Decision Tree Learner : 3:12 : Guessing target column: "genero".
+2020-11-20 17:54:13,800 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:54:18,051 : WARN  : main :  : Node : X-Aggregator : 3:11 : Selected columns 'Prediction (genero)' and 'genero' as prediction and target columns
+2020-11-20 17:54:43,355 : WARN  : KNIME-Worker-23-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:54:52,957 : WARN  : KNIME-Worker-21-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:54:56,346 : WARN  : KNIME-Worker-23-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:00,426 : WARN  : KNIME-Worker-21-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:01,485 : WARN  : KNIME-Worker-22-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:02,181 : WARN  : KNIME-Worker-21-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:06,692 : WARN  : KNIME-Worker-22-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:07,778 : WARN  : KNIME-Worker-23-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:08,339 : WARN  : KNIME-Worker-22-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:12,573 : WARN  : KNIME-Worker-23-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:13,141 : WARN  : KNIME-Worker-21-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:13,612 : WARN  : KNIME-Worker-23-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:17,716 : WARN  : KNIME-Worker-21-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:18,311 : WARN  : KNIME-Worker-22-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:18,801 : WARN  : KNIME-Worker-21-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:22,905 : WARN  : KNIME-Worker-22-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:23,385 : WARN  : KNIME-Worker-23-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:23,863 : WARN  : KNIME-Worker-22-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:27,975 : WARN  : KNIME-Worker-23-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:28,544 : WARN  : KNIME-Worker-21-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:29,088 : WARN  : KNIME-Worker-23-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:33,221 : WARN  : KNIME-Worker-21-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:33,767 : WARN  : KNIME-Worker-22-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:34,252 : WARN  : KNIME-Worker-21-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:38,358 : WARN  : KNIME-Worker-22-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:38,904 : WARN  : KNIME-Worker-23-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:39,388 : WARN  : KNIME-Worker-22-X-Partitioner 3:10 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:43,415 : WARN  : KNIME-Worker-23-Decision Tree Learner 3:12 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:55:43,913 : WARN  : KNIME-Worker-21-Decision Tree Predictor 3:13 :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:56:50,812 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:56:55,566 : WARN  : KNIME-Worker-23-X-Partitioner 3:0:2 :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:57:37,475 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:57:41,042 : WARN  : KNIME-Worker-24-X-Partitioner 3:0:2 :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:59:21,777 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:59:28,804 : WARN  : main :  : Node : Decision Tree Learner : 3:17 : Class column "class" not found or incompatible
+2020-11-20 17:59:38,307 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:59:49,508 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:13 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2020-11-20 17:59:49,509 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 17:59:55,600 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 18:00:09,186 : WARN  : KNIME-Worker-26-X-Partitioner 3:0:2 :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 18:00:22,512 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 18:00:22,513 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 18:00:22,515 : WARN  : main :  : Node : Decision Tree Learner : 3:16 : Class column "class" not found or incompatible
+2020-11-20 18:00:39,232 : WARN  : main :  : Node : Decision Tree Learner : 3:0:16 : Class column "class" not found or incompatible
+2020-11-20 20:01:34,284 : ERROR : ModalContext :  : Node : EM (3.7) : 3:8 : I/O error while saving internals: <no details available>
+java.io.UTFDataFormatException
+	at java.io.ObjectOutputStream$BlockDataOutputStream.writeUTF(ObjectOutputStream.java:2164)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.writeUTF(ObjectOutputStream.java:2007)
+	at java.io.ObjectOutputStream.writeUTF(ObjectOutputStream.java:869)
+	at org.knime.ext.weka37.clusterer.WekaClustererNodeModel.saveInternals(WekaClustererNodeModel.java:305)
+	at org.knime.core.node.Node.saveInternals(Node.java:2341)
+	at org.knime.core.node.FileNodePersistor.saveNodeInternDirectory(FileNodePersistor.java:1462)
+	at org.knime.core.node.FileNodePersistor.save(FileNodePersistor.java:1188)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.save(FileNativeNodeContainerPersistor.java:518)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.save(FileSingleNodeContainerPersistor.java:598)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.saveNodeContainer(FileWorkflowPersistor.java:2175)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.saveContent(FileWorkflowPersistor.java:1930)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.save(FileWorkflowPersistor.java:1844)
+	at org.knime.core.node.workflow.WorkflowManager.save(WorkflowManager.java:8673)
+	at org.knime.workbench.editor2.InplaceSaveRunnable.save(InplaceSaveRunnable.java:92)
+	at org.knime.workbench.editor2.AbstractSaveRunnable.run(AbstractSaveRunnable.java:103)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2020-11-20 20:02:43,362 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: taller-clustering-knime 0 loaded with error during data load
+2020-11-20 20:02:43,368 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: taller-clustering-knime 0
+2020-11-20 20:02:43,368 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: EM (3.7) 0:8
+2020-11-20 20:02:43,369 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: null
+2020-11-20 20:02:51,895 : WARN  : ModalContext :  : Node : EM (3.7) : 3:8 : weka.clusterers.EM: Cannot handle string attributes!
+2020-11-20 20:03:58,556 : WARN  : KNIME-Worker-2-EM (3.7) 0:8 :  : Node : EM (3.7) : 0:8 : Execution canceled
+2020-11-20 20:04:03,513 : WARN  : KNIME-Worker-1-EM (3.7) 0:8 :  : Node : EM (3.7) : 0:8 : Execution canceled
+2020-11-20 20:37:51,104 : WARN  : KNIME-Worker-4-EM (3.7) 0:8 :  : Node : EM (3.7) : 0:8 : Execution canceled
